@@ -1,0 +1,9 @@
+react js follows concet of virtual dom....
+
+vm
+
+
+functional components
+react hooks --> 
+
+useState
