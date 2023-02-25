@@ -4,6 +4,7 @@ import { Header } from "./Header";
 import Footer from "./Footer";
 import { Employee } from "./employee/Employee";
 import { EmployeeAdd } from "./employee/EmployeeAdd";
+import { EmployeeTest } from "./employee/EmployeeTest";
 
 function App() {
 
