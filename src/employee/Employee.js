@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { EmployeeAdd } from './EmployeeAdd';
 import { EmployeeList } from './EmployeeList';
 
 export const Employee = (props) => {
@@ -33,10 +34,19 @@ export const Employee = (props) => {
 
     }
 
+    const addEmployee = (emp)=>{
+
+            console.log("add emp",emp);
+            // employees = [...employees,emp];
+            // setemployees(employees);
+            setemployees([...employees,emp]);
+    }
+
   return (
     <div>
         
             <h1>EMPLOYEE </h1>
+            <EmployeeAdd addemp = {addEmployee} />
             <EmployeeList employees = {employees} delete ={deleteEmployee}/>
             {/* {
                 employees.map((emp)=>{

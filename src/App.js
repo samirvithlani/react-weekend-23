@@ -3,6 +3,7 @@ import "./App.css";
 import { Header } from "./Header";
 import Footer from "./Footer";
 import { Employee } from "./employee/Employee";
+import { EmployeeAdd } from "./employee/EmployeeAdd";
 
 function App() {
 
@@ -27,6 +28,8 @@ function App() {
       
       <div className="App">
       <Header/>
+      
+      <br/><br/><br/>
       <Employee value = {x}/>
         {/* <h1>No1 = {no1}</h1>
         <h1>Per = {per}</h1>
