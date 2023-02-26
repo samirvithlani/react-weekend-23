@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import { Employee } from "./employee/Employee";
 import { EmployeeAdd } from "./employee/EmployeeAdd";
 import { EmployeeTest } from "./employee/EmployeeTest";
+import { Product } from "./Product";
 
 function App() {
 
@@ -28,10 +29,11 @@ function App() {
     <>
       
       <div className="App">
-      <Header/>
+        <Product/>
+      {/* <Header/>
       
       <br/><br/><br/>
-      <Employee value = {x}/>
+      <Employee value = {x}/> */}
         {/* <h1>No1 = {no1}</h1>
         <h1>Per = {per}</h1>
         <h1>Name = {name}</h1>
