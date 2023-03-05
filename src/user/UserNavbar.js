@@ -38,6 +38,17 @@ export const UserNavbar = () => {
                 FEEDBACK
               </Link>
             </li>
+            <li class="nav-item">
+              <Link class="nav-link" to= {`/api/get`}>
+                get
+              </Link>
+            </li>
+            
+            <li class="nav-item">
+              <Link class="nav-link" to= {`/api/post`}>
+                POST
+              </Link>
+            </li>
             
           </ul>
         </div>

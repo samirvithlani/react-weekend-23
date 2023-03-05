@@ -12,6 +12,8 @@ import { FeedBack } from "./user/FeedBack";
 import { ContactUs } from "./user/ContactUs";
 import { UserNavbar } from "./user/UserNavbar";
 import { Contact } from "./user/Contact";
+import { TestApi } from "./api/TestApi";
+import { PostApiTest } from "./api/PostApiTest";
 
 function App() {
   var x = 4500;
@@ -33,6 +35,7 @@ function App() {
   return (
     <>
       <div className="App">
+        
         <UserNavbar/>
         <Routes>
         {/* <Route path="/" element = {<UserNavbar/>}/> */}
@@ -40,6 +43,8 @@ function App() {
         <Route path="/user/contactus" element={<ContactUs/>}/>
         <Route path="/user/feedback/:id" element={<FeedBack/>}/>
         <Route path="/user/contactus/:name" element= {<Contact/>}/>
+        <Route path="/api/get" element= {<TestApi/>}/>
+        <Route path="/api/post" element= {<PostApiTest/>}/>
         </Routes>
 
         {/* <Product/> */}
