@@ -50,7 +50,7 @@ function App() {
         <Route path="/api/post" element= {<PostApiTest/>}/>
         </Routes>
 {/* <CutomeHookTest/> */}
-<DleetApi/>
+{/* <DleetApi/> */}
         {/* <Product/> */}
         {/* <Header/>
       
