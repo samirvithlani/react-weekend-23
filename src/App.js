@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { Header } from "./Header";
 import Footer from "./Footer";
-import { Employee } from "./employee/Employee";
+
 import { EmployeeAdd } from "./employee/EmployeeAdd";
 import { EmployeeTest } from "./employee/EmployeeTest";
 import { Product } from "./Product";
@@ -17,6 +17,7 @@ import { PostApiTest } from "./api/PostApiTest";
 import { DropDown } from "./DropDown";
 import { CutomeHookTest } from "./CutomeHookTest";
 import { DleetApi } from "./api/DleetApi";
+import { Employee } from "./query/Employee";
 
 function App() {
   var x = 4500;
@@ -39,7 +40,8 @@ function App() {
     <>
       <div className="App">
         
-        <UserNavbar/>
+        {/* <UserNavbar/> */}
+        <Employee/>
         <Routes>
         {/* <Route path="/" element = {<UserNavbar/>}/> */}
         <Route path="/user/aboutus" element={<AboutUs/>}/>
