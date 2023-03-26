@@ -18,6 +18,7 @@ import { DropDown } from "./DropDown";
 import { CutomeHookTest } from "./CutomeHookTest";
 import { DleetApi } from "./api/DleetApi";
 import { Employee } from "./query/Employee";
+import { RegisterEmployee } from "./query/RegisterEmployee";
 
 function App() {
   var x = 4500;
@@ -42,6 +43,7 @@ function App() {
         
         {/* <UserNavbar/> */}
         <Employee/>
+        <RegisterEmployee/>
         <Routes>
         {/* <Route path="/" element = {<UserNavbar/>}/> */}
         <Route path="/user/aboutus" element={<AboutUs/>}/>
