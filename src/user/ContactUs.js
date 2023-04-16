@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { AppContext } from '../context/context';
 
 export const ContactUs = () => {
+    var user = useContext(AppContext);
     var contactperson = [
         {
             name: "Raj",
@@ -15,6 +17,7 @@ export const ContactUs = () => {
     ]
   return (
     <div>ContactUs
+        {user.name}
         <br></br>
         {
             contactperson.map((cp)=>{

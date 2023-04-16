@@ -19,6 +19,8 @@ import { CutomeHookTest } from "./CutomeHookTest";
 import { DleetApi } from "./api/DleetApi";
 import { Employee } from "./query/Employee";
 import { RegisterEmployee } from "./query/RegisterEmployee";
+import { Content } from "./context/Content";
+import { AppContext } from "./context/context";
 
 function App() {
   var x = 4500;
@@ -30,6 +32,7 @@ function App() {
   var per = 12.5;
   var name = "John";
   var isTrue = false;
+
   var user = {
     name: "John",
     age: 30,
@@ -40,21 +43,25 @@ function App() {
   return (
     <>
       <div className="App">
-        
         {/* <UserNavbar/> */}
-        <Employee/>
-        <RegisterEmployee/>
-        <Routes>
-        {/* <Route path="/" element = {<UserNavbar/>}/> */}
-        <Route path="/user/aboutus" element={<AboutUs/>}/>
-        <Route path="/user/contactus" element={<ContactUs/>}/>
-        <Route path="/user/feedback/:id" element={<FeedBack/>}/>
-        <Route path="/user/contactus/:name" element= {<Contact/>}/>
-        <Route path="/api/get" element= {<TestApi/>}/>
-        <Route path="/api/post" element= {<PostApiTest/>}/>
-        </Routes>
-{/* <CutomeHookTest/> */}
-{/* <DleetApi/> */}
+        {/* <Employee/>
+        <RegisterEmployee/> */}
+        <AppContext.Provider value={user}>
+          <Routes>
+            <Route path="/" element={<UserNavbar />} />
+            <Route path="/user/aboutus" element={<AboutUs />} />
+            <Route path="/user/contactus" element={<ContactUs />} />
+
+            <Route path="/user/feedback/:id" element={<FeedBack />} />
+            <Route path="/user/contactus/:name" element={<Contact />} />
+            <Route path="/api/get" element={<TestApi />} />
+            <Route path="/api/post" element={<PostApiTest />} />
+            <Route path="/content" element={<Content />} />
+          </Routes>
+        </AppContext.Provider>
+
+        {/* <CutomeHookTest/> */}
+        {/* <DleetApi/> */}
         {/* <Product/> */}
         {/* <Header/>
       
