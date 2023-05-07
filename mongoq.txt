@@ -1,0 +1,23 @@
+orderes :[
+{_id: 2, status: Ready for pickup},
+{_id: 3, status: Ready for pickup},
+{_id: 1, status: Accepted},
+{_id: 4, status: Pending},
+{_id: 5, status: Pending},
+{_id: 6, status: Accepted},
+]
+
+orders.aggregate([{
+    $project:{
+        status:1,
+        priority:{
+            $cond:{
+                if:{$eq:["$ status","Ready for pickup"]},
+                then:1,
+                else:2
+            }
+        }
+        $sort:{priority:1}
+    }
+}])
+

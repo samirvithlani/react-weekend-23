@@ -21,6 +21,7 @@ import { Employee } from "./query/Employee";
 import { RegisterEmployee } from "./query/RegisterEmployee";
 import { Content } from "./context/Content";
 import { AppContext } from "./context/context";
+import { Task1 } from "./Task1";
 
 function App() {
   var x = 4500;
@@ -43,6 +44,7 @@ function App() {
   return (
     <>
       <div className="App">
+        <Task1/>
         {/* <UserNavbar/> */}
         {/* <Employee/>
         <RegisterEmployee/> */}
